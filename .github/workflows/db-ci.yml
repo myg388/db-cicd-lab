@@ -29,3 +29,6 @@ jobs:
 
       - name: Revisar migraciones
         run: sqlfluff lint db/migrations
+
+      - name: Validar tipos prohibidos
+        run: python scripts/validate_sql.py db/migrations
