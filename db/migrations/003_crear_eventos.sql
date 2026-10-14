@@ -1,4 +1,4 @@
 create table eventos (
     id integer primary key,
-    datos jsonb
+    descripcion text not null
 );
